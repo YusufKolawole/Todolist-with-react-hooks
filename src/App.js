@@ -1,21 +1,11 @@
-/////********************Todolist using class component********************************* */
-
-import React from 'react'
-
-export default class TodoInput extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      todoInput : '',
-    }
-  }
-  render(){
-    return(
-    <div>
-    <input placeholder="hi" onChange={(e)=>{
-      this.setState({todoInput : e.target.value})
-      console.log(this.setState)
-    }}/>
-    </div>
-  )}
+import React from 'react';
+import TodoInput from "./App1"
+import TodoInput2 from "./App2"
+export default function App(){
+  return(
+    <React.Fragment>
+        <TodoInput/>
+        <TodoInput2/>
+    </React.Fragment>
+  )
 }

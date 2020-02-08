@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-export default function TodoInput() {
+export default function TodoInput2() {
   const [todoInput, setTodoInput] = useState('');
-  return <input placeholder="ex. drink milk" onChange={(e) => setTodoInput(e.target.value)} />
+  return <input placeholder="With Functional componnent" onChange={(e) => setTodoInput(e.target.value)} />
 }
+
